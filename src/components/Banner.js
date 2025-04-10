@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react"
 import { Container, Row, Col } from "react-bootstrap";
-import { ArrowRightCircle } from "react-bootstrap-icons";
+// import { ArrowRightCircle } from "react-bootstrap-icons";
 import HeaderImg from "../assets/img/header-img.jpg"
 
 export const Banner = () => {
@@ -16,7 +16,7 @@ export const Banner = () => {
             tick();
         }, delta)
 
-        return () => { clearInterval(ticker)};
+        return () => {clearInterval(ticker)};
     }, [text])
 
     const tick = () => {
@@ -47,7 +47,7 @@ export const Banner = () => {
                     <span className="tagline">Welcome to my Portfolio</span>
                     <h1>{`Hi I'm Adrienne, `}<span className="wrap">{text}</span> </h1>
                     <p>A Full Stack Developer based in Hamilton, Ontario, and the sole Web Developer at Point Blank Creative - Canada's first unionized Ad Agency. I love being able to bridge creativity and tech to build dynamic and meaningful web applications.</p>
-                    <button onClick={()=>console.log('connect')}>Let's connect <ArrowRightCircle size={25}/> </button>
+                    {/* <button onClick={()=>console.log('connect')}>Let's connect <ArrowRightCircle size={25}/> </button> */}
                     </Col>
                     <Col xs={12} md={6} xl={5}>
                         <img src={HeaderImg} alt="Header Img"/>

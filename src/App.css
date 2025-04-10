@@ -66,9 +66,9 @@ nav.navbar.scrolled {
   background-color: #121212;
 }
 
-nav.navbar a.navbar-brand {
+/* nav.navbar a.navbar-brand {
   width: 9%;
-}
+} */
 
 nav.navbar .navbar-nav .nav-link.navbar-link {
   font-weight: 400;
@@ -223,11 +223,11 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon:before {
 nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   border-color: transparent;
 }
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
 .App-header {
   background-color: #282c34;
@@ -244,14 +244,14 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 /************ Banner Css ************/
 /* .banner {
@@ -274,7 +274,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   display: inline-block;
 }
 .banner h1 {
-  font-size: 65px;
+  font-size: 55px;
   font-weight: 700;
   letter-spacing: 0.8px;
   line-height: 1;
@@ -331,3 +331,97 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .txt-rotate>.wrap {
   border-right: 0.08em solid #666;
 }
+
+
+/* Experience */
+.work-experience-section {
+  background-color: #121212;
+  padding: 4rem 2rem;
+  text-align: center;
+  color: white;
+}
+
+.work-experience-section h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 3rem;
+}
+
+.cards-wrapper {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.card {
+  background-color: #1e1e1e;
+  padding: 2rem;
+  border-radius: 1rem;
+  width: 360px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease-in-out;
+}
+
+.card.active {
+  filter: none;
+  opacity: 1;
+}
+
+.card.inactive {
+  filter: blur(1px) grayscale(0.5);
+  opacity: 0.5;
+}
+
+.card h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.card h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #ccc;
+}
+
+.date {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin: 1rem 0;
+}
+
+.card ul {
+  list-style-type: disc;
+  padding-left: 1.2rem;
+  color: #999;
+  text-align: left;
+}
+
+.card ul li {
+  margin-bottom: 0.8rem;
+  line-height: 1.4;
+}
+
+.dots {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #666;
+  opacity: 0.5;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.dot.active {
+  background-color: #fff;
+  opacity: 1;
+}
+
